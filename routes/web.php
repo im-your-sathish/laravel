@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\book;
@@ -51,3 +52,6 @@ Route::get('logout', [UserController::class, 'logout']);
 
 // api
 Route::get('testing', [UserController::class, 'testing']);
+
+
+Route::get("products",[ProductController::class,'index']);
