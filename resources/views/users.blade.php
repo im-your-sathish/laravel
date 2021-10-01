@@ -32,8 +32,7 @@
                 <th>User Name</th>
                 <th>User Email</th>
                 <th>User Mobile</th>
-                <th>Edit Action</th>
-                <th>Delete Action</th>
+              
             </tr>
         </thead>
         <tbody>
@@ -43,12 +42,7 @@
                 <td> {{$user->name}}</td>
                 <td> {{$user->email}}</td>
                 <td> {{$user->mobile}}</td>
-                <td>
-                    <button class="btn btn-primary btn-sm">Edit</button>
-                </td>
-                <td>
-                    <button class="btn btn-danger btn-sm">Delete</button>
-                </td>
+            
             </tr>
             @endforeach
         </tbody>
